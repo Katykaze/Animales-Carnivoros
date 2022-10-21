@@ -1,0 +1,301 @@
+body {
+	background: #1D202B;
+	color: bisque;
+
+
+}
+
+h1 {
+	text-align: center;
+}
+
+.parrafo_inicial {
+	font-family: 'Stardos Stencil', cursive;
+	text-transform: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	/* font-family: 'Stardos Stencil', cursive;
+	text-transform: none;
+	
+	text-align: center;
+	top: 0;
+	left: 0;
+	transform: translate(13%, 0%); */
+}
+
+.contenedor {
+	height: 90%;
+
+}
+
+.imagen_fondo {
+	background-image: url(../img/images.jfif);
+	width: 100%;
+	height: 30rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+
+}
+
+/* para sombrear esa imagen de fondo se usar el rgba con tres ceros y al final .numero para la cantidad de sombreado
+hay que poner el hijo en posicion absoluta con respecto al padre que será relativa, así no coge de referencia al documento */
+.sombreado {
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+
+}
+
+.caja {
+	width: 100%;
+	height: auto;
+	/* para que no se repita la foto, que cubra todo el fondo */
+	background-size: cover;
+	background-position: center center;
+
+}
+
+.caja>a {
+	text-decoration: none;
+	color: bisque;
+}
+
+p {
+	text-transform: none;
+	color: bisque;
+	/* font-family: 'Rubik Dirt', cursive; */
+	font-size: 15px;
+	font-family: 'Stardos Stencil', cursive;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+h2,
+p {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	text-align: justify;
+
+}
+
+.contenedor-grid {
+	background: #1D202B;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+	
+
+}
+	/* Imagenes de fondo de cajas grid y flex */
+
+	#caja4_1{
+		background-image: url(../img/comadreja.jfif);
+	}
+	#caja4_2{
+		background-image: url(../img/gloton.jfif);
+	}
+	#caja5_1{
+		background-image: url(../img/huron.jfif);
+	}
+	#caja5_2{
+		background-image: url(../img/marta.jfif);
+		
+	}
+	#caja6_1{
+		background-image: url(../img/tejon.jpg);
+	}
+	#caja6_2{
+		background-image: url(../img/vison_americano.jpg);
+	}
+	#caja6_3{
+		background-image: url(../img/descarga.jfif);
+	}
+
+.textos {
+	margin-left: 10px;
+	color: bisque;
+
+
+}
+
+.caja10 {
+
+	width: 100%;
+	background-color: antiquewhite;
+	/* border: saddlebrown solid; */
+	background-size: cover;
+	/*para que no se repita la foto, que cubra todo el fondo*/
+	background-position: center center;
+}
+
+
+.flex-container {
+
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 125px;
+
+}
+
+footer {
+	background-color: bisque;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 25px;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	font-family: 'Rubik Dirt', cursive;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+	.contenedor {
+		height: 90%;
+	}
+
+	.contenedor-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 5px;
+
+
+	}
+
+	html {
+		min-height: 100%;
+		position: relative;
+	}
+
+	body {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	footer {
+		background-color: antiquewhite;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 20px;
+		color: black;
+	}
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+
+	.contenedor-grid {
+
+		width: 70%;
+	}
+
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+	.contenedor{
+	width: 100%;
+	height: 100%;
+}
+	
+	.contenedor-grid {
+		display: grid;
+		width: 70%;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		justify-content: center;
+		gap: 10px;
+		padding: 10px;
+		margin: 0 auto;
+
+	}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+	.contenedor-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 5px;
+		margin: 0 auto;
+
+	}
+
+	.contenedor {
+		height: 90%;
+	}
+
+	html {
+		min-height: 100%;
+		position: relative;
+	}
+
+	body {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	footer {
+		background-color: antiquewhite;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 20px;
+		color: black;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contenedor-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		justify-content: center;
+		gap: 10px;
+		padding: 10px;
+
+
+
+	}
+
+	html {
+		min-height: 100%;
+		position: relative;
+	}
+
+	body {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	footer {
+		background-color: antiquewhite;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 20px;
+		color: black;
+	}
+
+}
